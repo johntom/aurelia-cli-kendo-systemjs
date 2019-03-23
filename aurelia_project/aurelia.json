@@ -80,6 +80,9 @@
             "resources": [
               "js/kendo.button.js",
               "js/kendo.datepicker.js",
+              "js/kendo.grid.js",
+              "js/kendo.data.js",
+              "js/kendo.data.odata.js",
               "css/web/kendo.common.min.css",
               "css/web/kendo.default.min.css"
             ]
@@ -90,7 +93,8 @@
             "main": "index",
             "resources": [
               "common/*.{js,html}",
-              "button/*.{js,html}"
+              "button/*.{js,html}",
+              "grid/*.{js,html}"
             ]
            }
         ]
