@@ -17,6 +17,12 @@ export class Welcome {
     pageSizes: true,
     buttonCount: 10
   };
+
+  resizable = {
+    content: true,
+    toolbar: true
+  }
+
   constructor() {
     // this.message = 'Hello World!--';
     this.datasource = {

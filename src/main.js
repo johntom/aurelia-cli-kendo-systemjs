@@ -4,6 +4,11 @@ import 'kendo/css/web/kendo.common.min.css';
 import 'kendo/css/web/kendo.default.min.css';
 import "kendo/js/kendo.datepicker.js";
 import "kendo/js/kendo.grid.js";
+import "kendo/js/kendo.editor.js";
+import "kendo/js/kendo.multiselect.js";
+
+
+// globals replace  <require from="aurelia-kendoui-bridge/editor/editor"></require>
 
 export function configure(aurelia) {
   aurelia.use
@@ -13,7 +18,14 @@ export function configure(aurelia) {
     .globalResources( "aurelia-kendoui-bridge/datepicker/datepicker" )
     .globalResources( "aurelia-kendoui-bridge/grid/grid" )
     .globalResources( "aurelia-kendoui-bridge/grid/col" )
-    .globalResources( "aurelia-kendoui-bridge/common/template" );
+    .globalResources( "aurelia-kendoui-bridge/common/template" )
+    .globalResources( "aurelia-kendoui-bridge/common/template" )
+    .globalResources( "aurelia-kendoui-bridge/multiselect/multiselect" )
+
+    .globalResources( "aurelia-kendoui-bridge/editor/editor" );
+
+
+
   if (environment.debug) {
     aurelia.use.developmentLogging();
   }

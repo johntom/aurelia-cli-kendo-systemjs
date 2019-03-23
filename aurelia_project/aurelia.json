@@ -81,6 +81,8 @@
               "js/kendo.button.js",
               "js/kendo.datepicker.js",
               "js/kendo.grid.js",
+              "js/kendo.editor.js",
+              "js/kendo.multiselect.js",
               "js/kendo.data.js",
               "js/kendo.data.odata.js",
               "css/web/kendo.common.min.css",
@@ -94,7 +96,9 @@
             "resources": [
               "common/*.{js,html}",
               "button/*.{js,html}",
-              "grid/*.{js,html}"
+              "grid/*.{js,html}",
+              "editor/*.{js,html}",
+              "multiselect/*.{js,html}"
             ]
            }
         ]
