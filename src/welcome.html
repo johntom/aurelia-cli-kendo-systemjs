@@ -1,0 +1,32 @@
+<template>
+    <require from="aurelia-kendoui-bridge/datepicker/datepicker"></require>
+
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <form role="form" submit.delegate="submit()">
+      <div class="form-group">
+        <label for="fn">First Name</label>
+        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
+      </div>
+      <div class="form-group">
+        <label for="ln">Last Name</label>
+        <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
+      </div>
+      <div class="form-group">
+        <label>Full Name</label>
+        <p class="help-block">${fullName | upper}</p>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <div class="demo-section k-content">
+      <h4>Show e-mails from:</h4>
+      <input id="datepicker" ak-datepicker="k-value.bind:'10/10/2011'" style="width: 100%" />
+
+      <h4 style="margin-top: 2em;">Add to archive mail from:</h4>
+      <input id="monthpicker" ak-datepicker="k-value.bind:'November 2011'; k-start.bind:'year'; k-depth.bind: 'year';k-format.bind:'MMMM yyyy';" style="width: 100%" />
+      </p>
+    </div>
+
+  </section>
+</template>
