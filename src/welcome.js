@@ -1,7 +1,7 @@
 //import {computedFrom} from 'aurelia-framework';
 
 export class Welcome {
-  heading = 'Welcome to the Aurelia Navigation App! 3-22';
+  heading = 'Welcome to the Aurelia Navigation-Kendo-Systemjs-Cli App!';
   firstName = 'John';
   lastName = 'Doe';
   previousValue = this.fullName;
@@ -11,6 +11,23 @@ export class Welcome {
   //To optimize by declaring the properties that this getter is computed from, uncomment the line below
   //as well as the corresponding import above.
   //@computedFrom('firstName', 'lastName')
+
+  pageable = {
+    refresh: true,
+    pageSizes: true,
+    buttonCount: 10
+  };
+  constructor() {
+    // this.message = 'Hello World!--';
+    this.datasource = {
+      type: 'odata',
+      transport: {
+        read: '//demos.telerik.com/kendo-ui/service/Northwind.svc/Customers'
+      },
+      pageSize: 5
+    };
+  }
+
   get fullName() {
     return `${this.firstName} ${this.lastName}`;
   }

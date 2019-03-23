@@ -3,13 +3,17 @@ import 'bootstrap';
 import 'kendo/css/web/kendo.common.min.css';
 import 'kendo/css/web/kendo.default.min.css';
 import "kendo/js/kendo.datepicker.js";
+import "kendo/js/kendo.grid.js";
 
 export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .feature('resources')
-    .plugin('aurelia-kendoui-bridge');
-
+    .plugin('aurelia-kendoui-bridge')
+    .globalResources( "aurelia-kendoui-bridge/datepicker/datepicker" )
+    .globalResources( "aurelia-kendoui-bridge/grid/grid" )
+    .globalResources( "aurelia-kendoui-bridge/grid/col" )
+    .globalResources( "aurelia-kendoui-bridge/common/template" );
   if (environment.debug) {
     aurelia.use.developmentLogging();
   }

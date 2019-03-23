@@ -1,11 +1,12 @@
 <template>
-  <require from="aurelia-kendoui-bridge/datepicker/datepicker"></require>
-
+ <!--  moved to globalresource in main,js
+   <require from="aurelia-kendoui-bridge/datepicker/datepicker"></require> 
   <require from="aurelia-kendoui-bridge/grid/grid"></require>
   <require from="aurelia-kendoui-bridge/grid/col"></require>
-  <require from="aurelia-kendoui-bridge/common/template"></require>
+  <require from="aurelia-kendoui-bridge/common/template"></require> -->
 
-
+  <require from="./app.css"></require>
+  <!-- <require from="./app.css!css"></require> -->
   <section class="au-animate">
     <h2>${heading}</h2>
     <form role="form" submit.delegate="submit()">
