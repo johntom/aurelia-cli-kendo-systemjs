@@ -33,7 +33,18 @@ export class Welcome {
       pageSize: 5
     };
   }
+  
+async test(){
+  let data = await this.getdata()
+  alert ('data '+ data.name)
+}
 
+async  getdata(){
+  // return await {'name':john,'address':'148 Wet 24th Street'}
+  let jdata = {'name':'john','address':'148 Wet 24th Street'}
+ 
+  return jdata
+}
   get fullName() {
     return `${this.firstName} ${this.lastName}`;
   }

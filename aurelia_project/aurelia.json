@@ -66,6 +66,11 @@
               "jquery"
             ]
           },
+          {
+            "name": "socket.io-client",
+            "path": "../node_modules/socket.io-client/dist",
+            "main": "socket.io"
+          },
           "aurelia-animator-css",
           {
             "name": "text",
@@ -73,6 +78,22 @@
             "main": "text"
           },
              "jquery",
+             {
+              "name": "materialize-css",
+              "main": "dist/js/materialize.js",
+              "path": "../node_modules/materialize-css",
+              "resources": [
+                "dist/css/materialize.css"
+              ]
+            },
+            {
+              "name": "aurelia-materialize-bridge",
+              "main": "index",
+              "path": "../node_modules/aurelia-materialize-bridge/dist/amd",
+              "resources": [
+                "**/*.{css,html}"
+              ]
+            },
           {
             "name": "kendo",
             "path": "../node_modules/@progress/kendo-ui/",
